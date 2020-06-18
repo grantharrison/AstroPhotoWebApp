@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Text:700|Roboto+Mono&display=swap');
+
+body {
+    background-image: url("images/mountainBackground.jpg");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+.picture {
+    max-width: 40%;
+    height: auto;
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.name {
+    color: #ffffff;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Red Hat Text', sans-serif;
+    border: 1px solid rgba(5, 24, 69, 0.99);
+}
+
+.responsiveNavBar a {
+    color: #ffffff;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Red Hat Text', sans-serif;
+    border: 1px solid rgba(5, 24, 69, 0.99);
+}
+
+a:link, a:visited {
+  background-color: rgba(247, 244, 244, 0.47);
+  color: rgba(5, 24, 69, 0.99);
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid rgba(5, 24, 69, 0.99);
+}
+
+.responsiveNavBar a:hover {
+  background-color: rgba(5, 24, 69, 0.76);
+  border: 1px solid black;
+    color: white;
+}
+
+.responsiveNavBar a:active {
+  background-color: rgba(5, 24, 69, 0.76);
+  border: 1px solid black;
+    color: white;
+}
+
+.responsiveNavBar {
+    background-color: rgba(7, 25, 103, 0.31);
+    display: block;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0;
+    border: 2px solid black;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.responsiveNavBar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .responsiveNavBar a:not(:first-child) {display: none;}
+  .responsiveNavBar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .responsiveNavBar.responsive {position: fixed;}
+  .responsiveNavBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .responsiveNavBar.responsive a {
+    display: block;
+    text-align: left;
+    margin: 10px;
+  }
+    
+  .responsiveNavBar.responsive a:hover {
+    background-color: rgba(5, 24, 69, 0.76);
+    border: 1px solid black;
+ }
+
+ .responsiveNavBar.responsive a:active {
+    background-color: rgba(5, 24, 69, 0.76);
+    border: 1px solid black;
+ }
+}

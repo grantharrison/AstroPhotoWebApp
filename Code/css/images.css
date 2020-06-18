@@ -1,0 +1,49 @@
+img {
+    width: 80%; 
+    border: 4px solid rgba(59, 93, 177, 0.99); 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quiz {
+    background-color: rgba(255, 255, 255, 0.67);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 160px;
+    color: rgba(0, 45, 152, 0.99);
+    font-family: 'Red Hat Text', sans-serif;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#submitButton {
+    text-align: center;
+}
+
+#results {
+    text-align: center;
+    color: green;
+    font-family: 'Red Hat Text', sans-serif;
+    margin-bottom: 20px;
+}
+
+input[type="submit" i] {
+    color: rgba(0, 45, 152, 0.99);
+    background-color: white;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: 'Red Hat Text', sans-serif;
+    border: 1px solid rgba(0, 45, 152, 0.99);
+    text-align: center;
+}
+
+input[type="submit" i]:hover {
+    background-color: rgba(0, 45, 152, 0.99);
+    border: 1px solid white;
+    color: white;
+}

@@ -1,0 +1,17 @@
+
+<div class="responsiveNavBar" id="navbar">
+<ul>
+<?php
+foreach ($this->menuItems as $menuItem) {
+	$label = $menuItem['label'];
+	$link = $menuItem['link'];
+	$current = "";
+	if ($label == $this->currentPage) {
+		$current = 'class="current"';
+	}
+	print "<a href=\"$link\" title=\"$label\" $current><span>$label</span></a>\n";
+}
+?>
+</ul>
+</div>
+
